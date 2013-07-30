@@ -1,0 +1,191 @@
+// Place all the styles related to the properties controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+body, input {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 810px;
+    margin: 0 auto;
+}
+
+.container > h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 29px;
+    color: #033333;
+    font-size: 48px;
+}
+
+.top_box a {
+    color: white;
+}
+
+.top_box {
+    overflow: hidden;
+    *zoom: 1;
+    background: #2980b9;
+    padding: 12px 20px;
+    margin: 0 12px 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #fff;
+}
+
+.top_box #user_nav {
+    float: left;
+    line-height: 20px;
+}
+
+.top_box #user_nav p {
+    margin-top: 2px;
+    margin-bottom: 0px;    
+}
+
+.top_box form {
+    float: right;
+}
+
+.top_box form input {
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    outline: none;
+}
+
+.base_buttons {
+    clear: left;
+    text-align: center;
+    margin-top: 21px;
+    float: right;
+    position: relative;
+    top: -43px;
+    margin-right: 7px;    
+}
+
+.buttons, .pagination a, .pagination span, .pagination em {
+    background: #2980b9;
+    padding: 6px 9px;
+    margin: 0 12px 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#properties section {
+    clear: left;    
+}
+
+#properties section > article {
+    width: 204px;
+    float: left;
+    padding: 16px 20px;
+    background: #fff;
+    margin: 0 12px;
+    border-radius: 4px;
+    border: 1px #ccc solid;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+#properties section > article .buttons {
+    float: right;
+}
+
+#properties section > article .image_box {
+    max-height: 133px;
+    overflow: hidden;    
+}
+
+#properties section > article img {
+    width: 100%;
+}
+
+#properties section > article h1 {
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#properties section > article .price {
+    font-size: 16px;
+    color: #7c7c7c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#properties section > article p{
+    font-size: 14px;
+    margin-bottom: 13px;
+    margin-top: 8px;    
+}
+
+#properties section > article .city{
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+
+#properties section > article .bottom_section {
+    border-top: solid 1px #eeeeee;    
+}
+
+
+#properties .pagination {
+	clear: left;	
+    text-align: center;
+}
+
+#property {
+    padding: 16px 20px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px #ccc solid;
+    margin: 0 12px;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+#property img {
+    float: right;
+    max-height: 215px;
+    max-width: 275px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#property h2 {
+    margin: 0 0 10px;
+}
+
+#property h2 span {
+    font-weight: 300;
+    color: #aaa;
+}
+
+#property .buttons {
+    float: left;
+}

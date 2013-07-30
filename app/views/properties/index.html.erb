@@ -1,0 +1,28 @@
+<h1>Gamaroff Properties</h1>
+
+<div class="top_box">
+    <%= form_tag properties_path, :method => 'get', :id  => 'properties_search' do %>
+      <%= text_field_tag :search, params[:search], { placeholder: 'Search by name'} %>
+    <% end %>
+
+    
+    <div id="user_nav">
+      <% if current_user %>
+        <p>Hello, <strong><%= current_user.info.name  %></strong>.</p>
+      <% else %>
+        <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+      <% end %>
+      <p>Welcome to Gamaroff Properties</p>
+    </div>
+    
+</div>
+
+<div id="properties">
+  <%= render 'properties' %>
+</div>
+
+<div class="base_buttons">
+<% if current_user %>
+  <%= link_to 'New Property', new_property_path, { class: "buttons" } %>
+<% end %>
+</div>

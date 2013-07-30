@@ -1,0 +1,21 @@
+<% @properties.each_slice(3) do |section| %>
+  <section>
+    <% section.each do |property| %>
+    <article>
+      <div class="image_box">
+        <img src="<%= property.image %>" alt="A property image"/> 
+      </div>
+      <h1><%= property.title %></h1>
+      <p class="price">£<%= property.amount %></p>
+      <p><%= property.description[0..100].gsub(/\s\w+$/, '...') %></p>
+      <div class="bottom_section">
+        <%= link_to 'Details &rarr;'.html_safe , property, {class: 'buttons'} %>
+        <!--<%= link_to 'Edit', edit_property_path(property) %>
+        <%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %>-->
+        <p class="city"><%= property.city %></p>
+      </div>
+    </article>
+    <% end %>
+  </section>
+<% end %>
+<%= will_paginate @properties %>

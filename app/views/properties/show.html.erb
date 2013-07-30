@@ -1,0 +1,31 @@
+<h1>Gamaroff Properties</h1>
+
+<div id="property">
+  <p id="notice"><%= notice %></p>
+  <div class="image_box">
+    <img src="<%= @property.image %>" alt="A picture of a property." />
+  </div>
+
+  <h1><%= @property.title %>
+    <span class="city"><%= @property.city %>
+    </span>
+  </h1>
+   
+  <p>
+    <strong>Price:</strong>
+    £<%= @property.amount %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @property.description %>
+  </p>
+  
+  <%= link_to '&larr; Back'.html_safe, properties_path, {class: "buttons"} %>
+
+  <% if current_user %>
+  <%= link_to 'Edit', edit_property_path(@property), {class: "buttons"} %>
+  <% end %>
+  
+</div>
+
