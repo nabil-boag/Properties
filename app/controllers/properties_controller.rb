@@ -1,9 +1,12 @@
 class PropertiesController < ApplicationController
   before_action :set_property, only: [:show, :edit, :update, :destroy]
 
+  # Require a user to authenticate with the application for all methods except show and index
+  before_filter :authenticate, except: [:show, :index]
   # GET /properties
   # GET /properties.json
   def index
+    # First search for the term, then paginate the results. @TODO move the per_page number to config setting
     @properties = Property.search(params[:search]).paginate(:per_page => 6, :page => params[:page])
   end
 
